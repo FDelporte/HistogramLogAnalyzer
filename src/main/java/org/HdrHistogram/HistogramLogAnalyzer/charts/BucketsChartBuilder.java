@@ -187,7 +187,7 @@ public class BucketsChartBuilder {
             }
         }
 
-        renderer.setBaseToolTipGenerator(new StandardXYToolTipGenerator());
+        renderer.setDefaultToolTipGenerator(new StandardXYToolTipGenerator());
 
         plot.setDomainGridlinesVisible(false);
         plot.setDomainPannable(true);

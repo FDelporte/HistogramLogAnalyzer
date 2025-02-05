@@ -9,7 +9,6 @@ import org.HdrHistogram.HistogramLogAnalyzer.applicationlayer.HLAChartType;
 import org.HdrHistogram.HistogramLogAnalyzer.datalayer.HistogramModel;
 import org.jfree.data.Range;
 import org.jfree.data.time.DateRange;
-import sun.util.calendar.ZoneInfo;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -122,7 +121,7 @@ public class DateProperties {
             return timezone;
         }
 
-        return ZoneInfo.getDefault();
+        return TimeZone.getDefault();
     }
 
     public static String getShortTimezoneString(TimeZone timeZone, Date date) {

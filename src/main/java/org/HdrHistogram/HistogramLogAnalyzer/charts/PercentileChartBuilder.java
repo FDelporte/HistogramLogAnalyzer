@@ -284,7 +284,7 @@ public class PercentileChartBuilder {
         }
 
         plot.setDomainGridlinesVisible(false);
-        renderer.setBaseToolTipGenerator(new StandardXYToolTipGenerator());
+        renderer.setDefaultToolTipGenerator(new StandardXYToolTipGenerator());
 
         plot.setDomainPannable(true);
         plot.setRangePannable(true);

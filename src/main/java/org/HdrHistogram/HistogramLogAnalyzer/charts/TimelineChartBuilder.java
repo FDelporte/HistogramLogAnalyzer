@@ -23,9 +23,9 @@ import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.chart.title.LegendTitle;
 
+import org.jfree.chart.ui.RectangleEdge;
 import org.jfree.data.Range;
 import org.jfree.data.xy.*;
-import org.jfree.ui.RectangleEdge;
 
 import javax.swing.*;
 import java.awt.*;
@@ -306,7 +306,7 @@ public class TimelineChartBuilder {
         LegendTitle legend = drawable.getLegend();
         legend.setPosition(RectangleEdge.TOP);
         plot.setDomainGridlinesVisible(false);
-        renderer.setBaseToolTipGenerator(new StandardXYToolTipGenerator());
+        renderer.setDefaultToolTipGenerator(new StandardXYToolTipGenerator());
         plot.setDomainPannable(true);
         plot.setRangePannable(true);
         plot.setRenderer(renderer);

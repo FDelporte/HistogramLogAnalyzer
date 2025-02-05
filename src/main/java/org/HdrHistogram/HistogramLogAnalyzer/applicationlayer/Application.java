@@ -35,7 +35,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import org.HdrHistogram.HistogramLogAnalyzer.datalayer.HistogramModel;
 import org.HdrHistogram.HistogramLogAnalyzer.properties.*;
 import org.jfree.chart.ChartPanel;
-import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.ChartUtils;
 import org.jfree.chart.plot.XYPlot;
 
 public class Application implements ActionListener {
@@ -202,8 +202,8 @@ public class Application implements ActionListener {
             f3[k] = new File(((Long) System.currentTimeMillis()).toString()
                     + ((Integer) k).toString());
             try {
-                ChartUtilities.saveChartAsPNG(f1, cp1.getChart(), snapshot_w, snapshot_h);
-                ChartUtilities.saveChartAsPNG(f2, cp2.getChart(), snapshot_w, snapshot_h);
+                ChartUtils.saveChartAsPNG(f1, cp1.getChart(), snapshot_w, snapshot_h);
+                ChartUtils.saveChartAsPNG(f2, cp2.getChart(), snapshot_w, snapshot_h);
                 // load source images
                 BufferedImage img1 = ImageIO.read(getaborder(brdr_thickness, f1));
                 BufferedImage img2 = ImageIO.read(getaborder(brdr_thickness, f2));

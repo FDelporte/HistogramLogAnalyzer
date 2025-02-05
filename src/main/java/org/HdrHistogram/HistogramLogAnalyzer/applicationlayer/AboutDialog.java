@@ -15,7 +15,6 @@ import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 
-
 public class AboutDialog extends JDialog {
 
     private static String _azulCopyrightString = "Copyright 2016, Azul Systems, Inc. All Rights Reserved.";
